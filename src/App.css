@@ -7,10 +7,15 @@
   --slide-bg: rgb(250, 0, 0);
 }
 body {
-  background-image: url("./resources/img/bg.png");
+  background-image: url("./resources/img/footer.jpg");
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   background-repeat: repeat-y;
   color: var(--text-color);
+}
+.all-app {
+  background-color: rgba(0, 0, 0, 0.712);
 }
 span,
 a {
@@ -18,7 +23,8 @@ a {
 }
 /* navbar css */
 .nav-container {
-  background-color: rgba(255, 255, 255, 0); /* Semi-transparent white */
+  /* background-color: rgba(0, 0, 0, 0.507); */
+  /* background-color: rgba(255, 255, 255, 0);  */
   padding: 20px;
   border-radius: 5px;
   backdrop-filter: blur(5px); /* Blur radius: 5px */
@@ -70,16 +76,16 @@ a {
 
 /* Hero Section */
 
+.h-bg-img {
+  background-image: url("./resources/img/bg.png");
+}
+
 .hero-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.507
-  ); /* Set your desired background color */
+  background-color: rgba(0, 0, 0, 0.178);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.288);
   padding: 20px;
   position: relative;
   overflow: hidden;
@@ -385,4 +391,151 @@ ul {
   .tooltip {
     margin-left: 0px;
   }
+}
+
+/* Skills */
+.skills {
+  background-color: #0e0c0c;
+}
+@media screen and (max-width: 900px) {
+  .skills {
+    flex-direction: column;
+  }
+}
+
+/* Project Card */
+
+.article-wrapper {
+  width: 300px;
+  -webkit-transition: 0.15s all ease-in-out;
+  transition: 0.15s all ease-in-out;
+  border-radius: 10px;
+  padding: 5px;
+  border: 4px solid transparent;
+  cursor: pointer;
+  background-color: rgb(17, 15, 15);
+}
+
+.article-wrapper:hover {
+  /* -webkit-box-shadow: 10px 10px 0 var(--slide-bg),
+    20px 20px 0 rgba(204, 51, 51, 0.548); */
+  box-shadow: 10px 10px 10px rgb(204, 51, 51), 20px 20px 10px var(--slide-bg);
+  border-color: rgb(204, 51, 51);
+  -webkit-transform: translate(-20px, -20px);
+  -ms-transform: translate(-20px, -20px);
+  transform: translate(-20px, -20px);
+}
+
+.article-wrapper:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/* .types {
+  gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: flex-start;
+} */
+
+.rounded-lg {
+  /* class tailwind */
+  border-radius: 10px;
+}
+
+.article-wrapper:hover .project-hover {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: rgb(204, 51, 51);
+}
+
+.project-info {
+  padding-top: 20px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #00000067;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 100;
+  gap: 20px;
+}
+
+.project-title {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 600;
+  /* depend de la font */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* color: black; */
+}
+
+.flex-pr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* .project-type {
+  background-color: #ff310c34;
+   color: #1a41cd; 
+  font-weight: bold;
+  padding: 0.3em 0.7em;
+  border-radius: 15px;
+  font-size: 12px;
+  letter-spacing: -0.6px;
+} */
+
+.project-hover {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 9px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.container-project {
+  width: 100%;
+  height: 170px;
+  z-index: -1;
+  background: rgb(24, 22, 22);
+}
+.bg {
+  background-color: #00000094;
+}
+.container-project img {
+  height: 100%;
+  width: 90%;
+}
+
+/* Projects */
+.all-projects {
+  background-color: rgba(0, 0, 0, 0.575);
+}
+
+.project-card-container div {
+  margin: 10px;
+  /* width: 100px; */
+}
+
+/* Footer */
+footer {
+  background-color: #0e0c0c;
 }

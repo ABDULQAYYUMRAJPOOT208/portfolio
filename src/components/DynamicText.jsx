@@ -5,6 +5,7 @@ const TypingEffectComponent = () => {
     "React Web Developer",
     "Mobile App Developer",
     ".Net Desktop App Developer",
+    "Half Computer Scientist",
   ]; // Array of strings
   const [typedText, setTypedText] = useState(""); // State to hold typed text
   const [currentIndex, setCurrentIndex] = useState(0); // State to track current string index

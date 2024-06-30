@@ -5,17 +5,21 @@ import Hero from "./components/Hero";
 import Loader from "./components/Loader";
 // import SkillLine from "./components/SkillLine";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Loader />
-      <Skills />
-      <h1 className="text-2xl  font-bold underline">Hello world!</h1>
+      <div className="all-app">
+        <Navbar />
+        <Hero />
+        <Loader />
+        <Skills />
+        <Projects />
+        <h1 className="text-2xl  font-bold underline">Hello world!</h1>
+        <Footer />
+      </div>
     </>
   );
 }

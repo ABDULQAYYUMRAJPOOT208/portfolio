@@ -69,10 +69,10 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="skills"
                 className="navButton animated-border block py-2 pl-3 pr-4 text-gray-300 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 dark:text-gray-400 dark:hover:bg-gray-700 lg:dark:hover:bg-transparent dark:border-gray-700"
               >
-                Company
+                Skills
               </a>
             </li>
             <li>
